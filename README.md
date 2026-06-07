@@ -97,6 +97,16 @@ spring.datasource.password=your_password
 ```
  
 The API will be available at `http://localhost:8080`
+
+## Github Actions
+
+This project uses GitHub Actions for continuous integration. Upon everyy push to the 'master' branch, the pipeline automatically:
+
+- Implements a PostgreSQL test database
+- Builds the application using Maven
+- Runs the JUnit test suite to verify core functionality
+
+This ensures the application builds and that tests pass consistently across environments, catching any breaking changes before they reach the main branch.
  
 ## Project Structure
  
